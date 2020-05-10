@@ -1,0 +1,14 @@
+node_modules/
+*.env
+npm-debug.log
+public/startbootstrap-landing-page-gh-pages/
+sendgridapi.py
+dbpass.txt
+nikkopass.txt
+authkey.txt
+node_modules/
+*.crt
+*.key
+*.yml
+*.yaml
+*.sql

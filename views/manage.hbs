@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Twitter Live Emergencies</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet" type="text/css" href="landing-page.css">
+  <script src="requestsapi.js" type="text/javascript"></script>
+
+  <script src="jquery.jeditable.min.js" type="text/javascript"></script>
+
+  <script>
+    
+    $(document).ready( function () {
+      console.log("1");
+      $("#editTwilie").submit(function(e) {
+        e.preventDefault();
+        // TODO ajax request, reload page on success
+        console.log("1");
+        editTwilie();
+      });
+      $("#active").val(parseInt("{{active}}"));
+    });
+    
+  </script>
+</head>
+<body>
+  <div id="pagewrap">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <li class="nav-item">
+        <a class="nav-link" href="/manage">Twitter Live Emergencies</a>
+      </li>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/manage">Manage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/test">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="pagebodywrap">
+      <h1 class="orgname">Twitter Live Emergencies Manager</h1>       
+      <div id="requestformwrap" action="/manage/editTwilie" method="post">
+        <form id="editTwilie">
+          <small id="requestformHelp" class="form-text text-muted">Fields marked with an asterisk <span class="required-asterisk">*</span> are <strong>required</strong>.</small>
+          <h2>NOTE: Twitter Live Emergencies does not verify with Twitter to ensure that your key is accurate; you will have to see for yourself that alerts are processed.</h2>
+
+          <div class="form-group">
+            <label for="twitter_consumer_key">Twitter Consumer Key<span class="required-asterisk">*</span></label>
+            <input type="text" class="form-control" id="twitter_consumer_key" value="{{twitter_consumer_key}}">
+          </div>
+
+          <div class="form-group">
+            <label for="twitter_consumer_secret">Twitter Consumer Secret<span class="required-asterisk">*</span></label>
+            <input type="text" class="form-control" id="twitter_consumer_secret" value="{{twitter_consumer_secret}}">
+          </div>
+
+          <div class="form-group">
+            <label for="twitter_access_token_key">Twitter Access Token Key<span class="required-asterisk">*</span></label>
+            <input type="text" class="form-control" id="twitter_access_token_key" value="{{twitter_access_token_key}}">
+          </div>
+
+          <div class="form-group">
+            <label for="twitter_access_token_secret">Twitter Access Token Secret<span class="required-asterisk">*</span></label>
+            <input type="text" class="form-control" id="twitter_access_token_secret" value="{{twitter_access_token_secret}}">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label for="active">Active</label>
+              <br />
+              <small id="activeHelp" class="form-text text-muted">Select Active for tweets to be sent to designated recipients.  Select inactive to stop all tweeting.</small>
+            </div>
+            <select class="custom-select" id="active">
+              <option value="1">Active</option>
+              <option value="0">Inactive</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="recipients">Recipients<span class="required-asterisk">*</span></label>
+            <small id="recipientsHelp" class="form-text text-muted">Enter each zone and recipient in the format <strong>zone:recipient</strong> and separate each by commas.  Include @ or # for each Twitter user or hashtag.</small>
+            <textarea class="form-control" id="recipients">{{recipients}}</textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-success" >Save Settings</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+   <footer class="footer bg-dark">
+    <div class="container">
+     
+    </div>
+  </footer>
+</body>

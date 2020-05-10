@@ -1,0 +1,185 @@
+/* line 1, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+/* line 5, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Serif', Times New Roman, serif;
+  font-weight: 700;
+}
+
+/* line 16, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+.bg-dark {
+  background: #211D20 !important;
+}
+
+/* line 20, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+.btn {
+  font-size: 12px !important;
+  color: #fff;
+  font-weight: 600 !important;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0.3em 1em !important;
+  border-radius: 0;
+  border-width: 8px !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+/* line 35, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_mixins.scss */
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* line 24, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+.btn-primary {
+  font-size: 12px !important;
+  color: #fff;
+  font-weight: 600 !important;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0.3em 1em !important;
+  border-radius: 0;
+  border-width: 8px !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  background: rgba(0, 127, 159, 0.9);
+}
+
+/* line 35, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_mixins.scss */
+.btn-primary:hover {
+  border-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_global.scss */
+.btn-primary:hover {
+  background: #007f9f;
+}
+
+/* line 3, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_nav.scss */
+nav a {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000 !important;
+  font-size: 14px;
+}
+
+/* line 11, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_nav.scss */
+nav a:hover {
+  color: #007f9f !important;
+  text-decoration: none;
+}
+
+/* line 1, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_icons.scss */
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+/* line 4, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_icons.scss */
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+/* line 6, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_icons.scss */
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+/* line 8, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_icons.scss */
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+/* line 14, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_icons.scss */
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+/* line 1, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* line 7, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+footer h4 {
+  color: #fff !important;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* line 15, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+footer p {
+  color: #fff !important;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* line 23, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+footer a img {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+#supported-logos {
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  /* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+  #supported-logos {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    grid-template-columns: 45px 45px 35px 110px 110px 120px 90px 90px;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+  #supported-logos {
+    grid-template-columns: 45px 45px 35px 110px 110px 120px 90px 90px;
+    grid-column-gap: 20px;
+    grid-template-rows: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+  #supported-logos {
+    grid-template-columns: 90px 90px 90px 130px 130px 140px 110px 110px;
+    grid-column-gap: 40px;
+    grid-template-rows: auto;
+  }
+}
+/*# sourceMappingURL=landing-page.css.map */

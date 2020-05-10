@@ -1,0 +1,192 @@
+
+html {
+	background-color: #211D20 !important;
+}
+
+#pagebodywrap {
+  margin:0 20px 0 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+	margin: 0 auto;
+}
+
+.orgname {
+	font-size:1.5em;
+}
+
+.displayname {
+	font-size:1em;
+}
+
+.nav-link-name:hover {
+  color: black !important;
+}
+
+.nav-link-name-leader {
+  color: #ffc746 !important;
+  background-color: black;
+}
+.nav-link-name-leader:hover {
+  color: #ffc746 !important;
+  background-color: black;
+}
+
+.nav-link-name-admin {
+  color: #ffc746 !important;
+  background-color: black;
+}
+.nav-link-name-admin:hover {
+  color: #ffc746 !important;
+  background-color: black;
+  border: 3px #ffc746 !important;
+}
+
+
+#pagewrap {
+	margin-bottom:10px;
+}
+
+.spinner-border {
+
+}
+
+.required-asterisk {
+  color:red;
+}
+
+.login-link {
+  width: 300px;
+  clear: both;
+  margin: auto;
+}
+/*
+.btn-primary {
+	background-color: #09809f;
+	border-color: #09809f;
+}
+.btn-primary:hover {
+	background-color: #20c997;
+	border-color: #20c997;
+}
+
+.btn-success {
+	background-color: #ffc746;
+	border-color: #ffc746;
+	color: black !important;
+}
+.btn-success:hover {
+	background-color: #ffc107;
+	border-color: #ffc107;
+	color: black;
+}
+.btn-success:active {
+	background-color: #fff;
+	border-color: #fff;
+	color: white !important;
+}
+*/
+#logo {
+	width:150px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #fbaf33;
+    background: #fbaf33;
+    font-weight: normal;
+    color: #000000;
+}
+
+#dtlogo {
+	width: 350px;
+	margin-top: 15px;
+}
+
+footer {
+	padding-bottom: 0;
+}
+
+#supported-logos {
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-wrap: wrap;
+}
+ 
+@media (min-width: 1200px) {
+  /* line 28, Users/isabelmelotti/Desktop/startbootstrap-landing-page-gh-pages/scss/_footer.scss */
+  #supported-logos {
+    grid-template-columns: 90px 90px 90px 130px 130px 140px 110px 110px;
+    grid-column-gap: 40px;
+    grid-template-rows: auto;
+  }
+}
+
+
+#pagewrap{
+max-width: 1200px;
+                margin: auto;
+}
+ 
+.bg-light {
+    background-color: #ffffff!important;
+}
+ 
+#pagebodywrap {
+    margin: 20px;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif', Times New Roman, serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+ 
+.displayname {
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+#policy-bar {
+  padding-top: 30px;
+}
+
+.align-self-center {
+  text-align: center;
+}
+.align-self-center a {
+  color: white;
+}
+ 
+/* could we also have a "request form" button on the main navigaition*/
+ 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    margin: 20px 0 30px;
+}
+ 
+}
+div#requestformwrap {
+    margin: 20px auto;
+}
+ 
+.spinner-border{
+                margin: 10px 0;
+}
+ 
+div#requesttablewrap {
+    margin: 20px auto;
+}
+ 
+div#table-instructions {
+    margin: 20px auto;
+}
